@@ -7,4 +7,4 @@ This a slight edit of oldcord to change it to pre-refresh UI before the shitty d
 To install with Vencord simply place "Oldcord.theme.css" into the "plugins" folder or for BetterDiscord place it in the "themes" folder
 
 or the easiest method
-Go to online themes and add this link: https://raw.githubusercontent.com/THEYAKUZI/oldcord/main/src/main.css
+Go to online themes and add this link: https://raw.githubusercontent.com/MegaPiggy/oldcord/main/src/main.css

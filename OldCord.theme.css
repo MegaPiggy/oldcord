@@ -1,20 +1,20 @@
 /**
   * @name OldCord
   * @version 1.0
-  * @author @milbit (fork by @theyakuzi)
-  * @source https://github.com/theyakuzi/oldcord
+  * @author @milbit (fork by @megapiggy)
+  * @source https://github.com/megapiggy/oldcord
   * @description Restores discord's 2020 UI
 */
-@import url("https://theyakuzi.github.io/oldcord/src/main.css");
+@import url("https://megapiggy.github.io/oldcord/src/main.css");
 
 /*
 Addons
 remove a "/*" below to enable one
 */
 
-/*@import url("https://milbits.github.io/oldcord/src/components/oldEmojis.css");*/
-/*@import url("https://milbits.github.io/oldcord/src/components/oldContext.css");*/
-@import url("https://milbits.github.io/oldcord/src/components/showEffects.css");
+/*@import url("https://megapiggy.github.io/oldcord/src/components/oldEmojis.css");*/
+/*@import url("https://megapiggy.github.io/oldcord/src/components/oldContext.css");*/
+@import url("https://megapiggy.github.io/oldcord/src/components/showEffects.css");
 
 /* Options */
 
