@@ -127,6 +127,9 @@ body {
 	--blurple-inverted: #fff;
 	--blurple-inverted-hover: hsl(228, calc(var(--saturation-factor, 1) * 56%), 98%);
 	--blurple-inverted-active: hsl(229, calc(var(--saturation-factor, 1) * 60%), 93%);
+	--blurple-border: hsl(var(--blurple-border-hsl)/1);
+	--blurple-border-hsl-old: hsl(234.935, calc(var(--saturation-factor, 1) * 85.556%), 64.706%);
+	--blurple-border-hsl: 234.935 calc(var(--saturation-factor, 1)*85.556%) 64.706%;
 	--text-brand: var(--blurple);
 	--bg-brand: var(--blurple);
 	--brand-260: var(--brand-experiment-260);
@@ -229,6 +232,7 @@ body {
 	--crunchyroll-dark: hsl(29, calc(var(--saturation-factor, 1) * 93%), 55%);
 	--crunchyroll: hsl(29, calc(var(--saturation-factor, 1) * 93%), 60%);
 	--text-link: color-mix(in oklab, var(--blue-345) 100%, var(--theme-text-color, #000) var(--theme-text-color-amount, 0%));
+	--reaction-background: hsla(234.935 calc(var(--saturation-factor, 1) * 85.556%) 64.706% /.15);
 }
 
 .cardPrimary__73069 {

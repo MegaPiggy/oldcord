@@ -181,13 +181,15 @@
 /** Mentions/Pings*/
 .wrapper_f61d60 {
 	font-weight: 500;
-	color: var(--brand-experiment-460);
-	background: var(--brand-experiment-10a);
+	color: var(--mention-foreground);
+	background: var(--mention-background);
 	padding: 0 2px;
+	border-radius: 3px;
+	unicode-bidi: plaintext;
 }
 .wrapper_f61d60:hover {
-	background: var(--brand-experiment);
-	color: var(--brand-experiment-100);
+	background-color: var(--brand-experiment-500);
+	color: var(--white-500)
 }
 
 .interactive {
@@ -311,7 +313,8 @@
 .mentioned__5126c .reactionMe_f8896c.reaction_f8896c:hover,
 .reaction_f8896c.reactionMe_f8896c,
 .reaction__23977.reactionMe__23977 {
-	background-color: var(--brand-experiment-30a) !important;
+	background-color: var(--reaction-background) !important;
+	border-color: var(--blurple-border) !important;
 }
 
 .reaction__23977 .reactionInner__23977,
@@ -321,6 +324,21 @@
 .reaction_f8896c.reactionMe_f8896c .reactionCount_f8896c,
 .reaction__23977.reactionMe__23977 .reactionCount__23977 {
 	color: var(--brand-experiment) !important;
+}
+.reaction__23977 {
+	background: var(--background-secondary) !important;
+	border: .0625rem solid transparent !important;
+	border-radius: .5rem !important;
+	box-sizing: border-box !important;
+	cursor: pointer !important;
+	flex-shrink: 0 !important;
+	margin-bottom: .25rem !important;
+	margin-right: .25rem !important;
+	transition: none .1s ease !important;
+	transition-property: background-color,border-color !important;
+	-webkit-user-select: none !important;
+	-moz-user-select: none !important;
+	user-select: none !important;
 }
 .reactionMe_f8896c:hover,
 .reactionMe__23977:hover {
