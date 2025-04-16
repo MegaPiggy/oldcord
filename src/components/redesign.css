@@ -1148,9 +1148,6 @@
     background: var(--background-tertiary);
 	.scroller_ef3116 {
 		padding-top: 2px;
-	    > div[style]:not([class]) {
-	        min-height: 50px;
-		}
 		ul.stack_dbd263 {
 		    height: auto !important;
 		}
