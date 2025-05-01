@@ -1,4 +1,4 @@
-.theme-dark:not(html.custom-theme-background, :has(#clientThemeVars)) {
+.theme-dark:not(html.custom-theme-background, :has(#clientThemeVars),.theme-darker,.theme-midnight) {
 	--autocomplete-bg: color-mix(in oklab, var(--primary-630) 100%, var(--theme-base-color, #000) var(--theme-base-color-amount, 0%));
     --channeltextarea-background: #383A40;
 	--header-primary: var(--white-500);
@@ -233,6 +233,14 @@ body {
 	--crunchyroll: hsl(29, calc(var(--saturation-factor, 1) * 93%), 60%);
 	--text-link: color-mix(in oklab, var(--blue-345) 100%, var(--theme-text-color, #000) var(--theme-text-color-amount, 0%));
 	--reaction-background: hsla(234.935 calc(var(--saturation-factor, 1) * 85.556%) 64.706% /.15);
+	--text-warning: #faa61a;
+	--notice-background-warning: #f26522;
+	--notice-text-warning: #fff;
+	--notice-background-critical: #f23f42;
+	--notice-text-critical: #fff;
+	--background-surface-high: var(--background-secondary);
+	--bg-base-secondary: var(--background-secondary);
+	--bg-base-tertiary: var(--background-tertiary);
 }
 
 .cardPrimary__73069 {
