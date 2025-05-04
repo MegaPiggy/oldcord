@@ -1069,7 +1069,7 @@ html.platform-osx .title_c38106 {
 	.jumpToPresentBar__0f481 {
 		bottom: 0;
 		border-radius: 8px 8px 0 0;
-		background-color: var(--background-accent);
+		background-color: var(--background-surface-highest);
 		opacity: 0.95 !important;
 		padding-bottom: 4px !important;
 		color: var(--white-500);
@@ -1245,7 +1245,7 @@ html.platform-osx .title_c38106 {
 	.voiceBar__7aaec {
 		border: unset;
 		margin-bottom: 4px;
-		background-color: var(--background-accent);
+		background-color: var(--background-surface-highest);
 		opacity: 0.9;
 	}
 	.top__7aaec,
@@ -1532,10 +1532,10 @@ html.platform-osx .title_c38106 {
 				margin-top: 4px;
 				margin-bottom: 20px;
 				border-radius: 4px;
-				background-color: var(--background-primary);
+				background-color: transparent;
 			}
 			.tab_ab6641:is(.selected_b3f026) {
-				background-color: var(--background-accent);
+				background-color: var(--background-surface-highest);
 			}
 			.tab_ab6641:nth-of-type(3) {
 				order: -2;
