@@ -1,16 +1,32 @@
 /**
-  * @name OldCord
-  * @version 1.0
-  * @author @milbit (fork by @megapiggy)
-  * @source https://github.com/megapiggy/oldcord
-  * @description Restores discord's 2020 UI
-*/
+ * @name OldCord
+ * @version 2.0
+ * @author milbit, kinggamingyt (fork by @megapiggy)
+ * @source https://github.com/megapiggy/oldcord
+ * @website https://github.com/megapiggy/oldcord
+ * @description Restores discord's 2025 UI
+ */
+
+/*Main theme components*/
 @import url("https://megapiggy.github.io/oldcord/src/main.css");
 
+/*If you want to enable/disable each part (like disable profile theming), remove the above line
+and a [slash]* below. Always enable vars.css though please please pelasse plealslelle*/
+
+/* @import url("https://megapiggy.github.io/oldcord/src/components/vars.css"); */
+/* !IMPORTANT! */
+/* @import url("https://megapiggy.github.io/oldcord/src/components/color.css"); */
+/* @import url("https://megapiggy.github.io/oldcord/src/components/imgs.css"); */
+/* @import url("https://megapiggy.github.io/oldcord/src/components/other.css"); */
+/* @import url("https://megapiggy.github.io/oldcord/src/components/profile.css"); */
+/* @import url("https://megapiggy.github.io/oldcord/src/components/redesign.css"); */
+/*Changes the overall layout*/
+
+
 /*
-Addons
-remove a "/*" below to enable one
-*/
+  * Addons
+  * remove a "/*" below to enable one
+  */
 
 /*@import url("https://megapiggy.github.io/oldcord/src/components/oldEmojis.css");*/
 /*@import url("https://megapiggy.github.io/oldcord/src/components/oldContext.css");*/
@@ -19,6 +35,6 @@ remove a "/*" below to enable one
 /* Options */
 
 :root {
-	/* Re-adds the animation for reactions. Might look weird | 0 - off | 1 - on*/
-	--reaction-animation: 0;
+  /* Re-adds the animation for reactions. Might look weird | 0 - off | 1 - on*/
+  --reaction-animation: 0;
 }

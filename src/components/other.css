@@ -403,24 +403,27 @@ code {
 	letter-spacing: unset;
 }
 
-.input__0f084:not(.textarea_dde0a8, .searchBoxInput__56498, [name="add-friend"], .note_fcb628 textarea),
+.input__0f084:not(.textarea_dde0a8, .searchBoxInput__56498, [name="add-friend"], .note_fcb628 textarea, .profileNote__9c3be textarea),
 .bioTextArea__6a919 {
 	border-radius: 3px;
 	color: var(--text-normal) !important;
 	background-color: var(--deprecated-text-input-bg) !important;
 	border: 1px solid var(--deprecated-text-input-border);
 	transition: border-color 0.2s ease-in-out;
-}
+	&:focus{
+			border-color: var(--blurple) !important;
 
+	}
+}
+.select__3f413:hover:not([aria-disabled="true"]),
+.input__0f084:hover,
+.bioTextArea__6a919:hover {
+	border-color: var(--deprecated-text-input-border-hover) !important;
+}
 .input__0f084::-webkit-input-placeholder:not(.textarea_dde0a8) {
 	color: var(--text-muted);
 }
 
-.select__3f413:hover:not([aria-disabled="true"]),
-.input__0f084:hover,
-.bioTextArea__6a919:hover {
-	border-color: var(--deprecated-text-input-border-hover);
-}
 
 .emojiInput_e7d73e.input__0f084 {
 	padding: 0 !important;
@@ -625,19 +628,13 @@ code {
     background-color: var(--brand-260);
 }
 
-/* make background the same as text channels*/
-.container_f369db,
-.title_f75fb0 {
-	background-color: var(--background-primary) !important;
-}
-
 .theme-dark .children__9293f:after {
 	display: none;
 }
 
 /* make "search/create post" background the same as the textarea*/
 .headerRow_f369db .mainCard_f369db {
-	background: var(--bg-overlay-3, var(--channeltextarea-background));
+	background: var(--bg-overlay-3, var(--chat-background-default));
 	border: none !important;
 	box-shadow: none !important;
 	border-radius: 5px;
@@ -1144,9 +1141,18 @@ h2.title_b717a1,
 }
 
 /* polls */
+.normalStylesDefault_a1443c {
+	--custom-poll-style-vote-background: var(--background-secpndary);
+	--custom-poll-style-vote-percentage: var(--background-modifier-accent);
+	--polls-victor-fill: var(--green-transparent);
+	--polls-voted-fill: var(--brand-experiment-25a);
+}
 .answerInner__4c520 {
 	background-color: var(--button-secondary-background);
 	border-radius: 3px;
+	& .label__4c520 {
+		color: var(--interactive-active);
+	}
 }
 .secondaryButtonPresentation__0be77 {
 	background-color: var(--button-secondary-background);
@@ -1397,14 +1403,7 @@ h2.title_b717a1,
 	font-weight: 600;
 	text-transform: uppercase;
 }
-.defaultColor__5345c.text-md\/medium_cf4812 {
-	font-weight: 600;
-	text-transform: uppercase;
-	.title__6b700 {
-		font-size: 12px;
-		color: var(--channels-default);
-	}
-}
+
 .scrollerBase_d125d2.thin_d125d2.container_e59759.content__49fc1 > .defaultColor__5345c.heading-md\/semibold_cf4812 {
 	font-weight: 500;
 }
@@ -1468,6 +1467,16 @@ h2.title_b717a1,
 	.fieldList__1fed1 {
 		margin-left: 100px;
 		margin-top: -50px;
+	}
+	.fieldButton__1fed1:not(.removeButton__1fed1) {
+		background-color: var(--blurple);
+		color: var(--white);
+		&:hover {
+			background-color: var(--blurple-hover);
+		}
+		&:active {
+			background-color: var(--blurple-active);
+		}
 	}
 }
 
@@ -1642,27 +1651,25 @@ https://github.com/XYZenix/DTM-16
 .nitroWheel_c5f0dc {
 	display: none;
 }
-.themeSelection__36dee .iconWrapper__36dee{
+.themeSelection__36dee .iconWrapper__36dee {
 	top: -4.5px;
 	left: 35px;
 	& svg {
-		width: 35px; height: 35px;
+		width: 35px;
+		height: 35px;
 	}
 }
 
-:is(#equicordthemes-tab,#vencordthemes-tab) .sectionTitle__7bffb{
-	display: grid
-}
-:is(#equicordthemes-tab,#vencordthemes-tab) .sectionTitle__7bffb:before{
-	content: "Do NOT use OldCord with other themes. Things WILL break.";
+:is(#equicordthemes-tab, #vencordthemes-tab) .sectionTitle__7bffb:before {
+	content: "OldCord note: Using it with other themes may break stuff. Please don't report issues (this is not from vencord)";
 	color: #fff;
 	padding: 10px;
 	background: var(--red-transparent);
 	border: 1px solid var(--red);
 	border-radius: 3px;
 }
-:is(#themes-tab) .bd-addon-controls:after{
-	content: "Do NOT use OldCord with other themes. Things WILL break.";
+:is(#themes-tab) .bd-addon-controls:after {
+	content: "OldCord note: Using it with other themes may break stuff. Please don't report issues (this is not from betterdiscord)";
 	color: #fff;
 	margin-top: 10px;
 	padding: 10px;
