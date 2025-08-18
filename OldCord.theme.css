@@ -10,31 +10,37 @@
 /*Main theme components*/
 @import url("https://megapiggy.github.io/oldcord/src/main.css");
 
-/*If you want to enable/disable each part (like disable profile theming), remove the above line
-and a [slash]* below. Always enable vars.css though please please pelasse plealslelle*/
+/* If you want to enable/disable each part (like disable profile theming), remove the above line and a [slash]* below. */
 
-/* @import url("https://megapiggy.github.io/oldcord/src/components/vars.css"); */
+/* @import url("https://megapiggy.github.io/oldcord/src/components/vars.css"); */ /* I don't recommend disabling this */
 /* !IMPORTANT! */
-/* @import url("https://megapiggy.github.io/oldcord/src/components/color.css"); */
-/* @import url("https://megapiggy.github.io/oldcord/src/components/imgs.css"); */
-/* @import url("https://megapiggy.github.io/oldcord/src/components/other.css"); */
-/* @import url("https://megapiggy.github.io/oldcord/src/components/profile.css"); */
-/* @import url("https://megapiggy.github.io/oldcord/src/components/redesign.css"); */
+/* @import url("https://megapiggy.github.io/oldcord/src/components/color.css"); */ /* Restores old blurple n stuff*/
+/* @import url("https://megapiggy.github.io/oldcord/src/components/imgs.css"); */ /* 2020 default avatars and other icons */
+/* @import url("https://megapiggy.github.io/oldcord/src/components/other.css"); */ /* Random stuff that add to the theme */
+/* @import url("https://megapiggy.github.io/oldcord/src/components/profile.css"); */ /* Restores the original 2020 Profile UI. Disables cosmetics by default, look at "addons" below */
+/* @import url("https://megapiggy.github.io/oldcord/src/components/redesign.css"); */ /* The old Discord layout, pre-2025. */
 /*Changes the overall layout*/
-
 
 /*
   * Addons
   * remove a "/*" below to enable one
   */
-
-/*@import url("https://megapiggy.github.io/oldcord/src/components/oldEmojis.css");*/
-/*@import url("https://megapiggy.github.io/oldcord/src/components/oldContext.css");*/
+/* profile cosmetics! woah! funky banners and colors and nametags and stuff! so cool! */
 @import url("https://megapiggy.github.io/oldcord/src/components/showEffects.css");
+/* Clan tags ( [🗡️CLAN] )*/
+@import url("https://megapiggy.github.io/oldcord/src/components/showTags.css");
+
+/* The old 🥺🥹 */
+/*@import url("https://megapiggy.github.io/oldcord/src/components/oldEmojis.css");*/
+/* Old color when you use right click menus*/
+/*@import url("https://megapiggy.github.io/oldcord/src/components/oldContext.css");*/
 
 /* Options */
 
 :root {
+ --oldcord-tint: 210; /*Light mode tint. Has to be hue in HSL*/
+ --oldcord-tint-intensity: 11.11; /*Tint intensity/Saturation. 0 for grayscale, 10000 for an awesome party*/
+ 
   /* Re-adds the animation for reactions. Might look weird | 0 - off | 1 - on*/
   --reaction-animation: 0;
 }

@@ -8,3 +8,9 @@ To install with Vencord simply place "Oldcord.theme.css" into the "plugins" fold
 
 or the easiest method
 Go to online themes and add this link: https://raw.githubusercontent.com/MegaPiggy/oldcord/main/src/main.css
+
+> [!IMPORTANT]  
+> - Enable "Sync Profile Themes" in `Settings > Accessibility` to fix broken profile colors
+> - UI Density should be on default
+> - To have the old gray colors, use the "Ash" theme in appearance settings
+>   - If you use vencord's "Client Theme" plugin, use darker
